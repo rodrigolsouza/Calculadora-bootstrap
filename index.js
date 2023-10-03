@@ -61,4 +61,5 @@ document.addEventListener('keydown', function(event) {
     }
 });
   
-/*erros quando se clica em apagar no teclado e quando se aperta enter*/
+/*erros quando se clica em apagar no teclado e quando se aperta enter
+função reset não está funcionando */
