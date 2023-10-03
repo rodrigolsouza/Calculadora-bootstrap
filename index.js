@@ -53,13 +53,13 @@ document.addEventListener('keydown', function(event) {
       document.getElementById(tecla).focus();
       getValue(tecla)
     } else if (tecla === "Backspace") {
-      document.getElementById("<").focus();
+      document.getElementById("DEL").focus();
       handleDelete()
-    } else if (tecla === "=") {
+    } else if (tecla === "Enter") {
       document.getElementById("=").focus();
       getResult();
     }
 });
   
 /*erros quando se clica em apagar no teclado e quando se aperta enter
-função reset não está funcionando */
+função reset não está funcionando*/
