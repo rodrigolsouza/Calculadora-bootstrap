@@ -1,0 +1,10 @@
+CALCULADORA:
+
+Para fazer um tipo de tela que tem alguns botões clicáveis e que terão um comportamento, como é o caso da calculadora primeiro se faz necessário se abraçar essa tela com uma div maior separando-a do body.
+
+O que seria mais responsivo? fazer form e table ou buttons em containers?
+
+
+LINKS AUXILIARES 
+https://www.youtube.com/watch?v=8IxIyI3JomE
+https://www.youtube.com/watch?v=cHkN82X3KNU
