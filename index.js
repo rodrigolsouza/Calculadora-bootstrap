@@ -39,27 +39,25 @@ function getResult() {
       const result = eval(expression) // Return a number
       expression = String(result) // Convert number to string
       
-      document.getElementById("display-value").innerHTML = result
+      document.getElementById("display-value").innerHTML = expression
     } catch (error) {
       document.getElementById("display-error-message").style.display = "inline-block";
     }
 }
 
 document.addEventListener('keydown', function(event) {
-    const tecla = event.key;
+    const keyboardKey = event.key;
     const calculatorRegex = /[0-9+\-*/().]/;
     
-    if(calculatorRegex.test(tecla)) {
-      document.getElementById(tecla).focus();
-      getValue(tecla)
-    } else if (tecla === "Backspace") {
+    if(calculatorRegex.test(keyboardKey)) {
+      document.getElementById(keyboardKey).focus();
+      getValue(keyboardKey)
+    } else if (keyboardKey === "Backspace") {
       document.getElementById("DEL").focus();
       handleDelete()
-    } else if (tecla === "Enter") {
+    } else if (keyboardKey === "Enter") {
       document.getElementById("=").focus();
       getResult();
     }
 });
   
-/*erros quando se clica em apagar no teclado e quando se aperta enter
-função reset não está funcionando*/
