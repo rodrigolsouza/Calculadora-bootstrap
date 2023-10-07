@@ -19,6 +19,7 @@ function handleDelete() {
   
     if (expression.length > 0) {
       document.getElementById("display-value").innerHTML = result
+      document.getElementById("display-error-message").style.display = "none"
     } else {
         expression = "";
       document.getElementById("display-value").innerHTML = "0"
@@ -27,6 +28,7 @@ function handleDelete() {
 
 function handleReset() {
     expression = "";
+    document.getElementById("display-error-message").style.display = "none"
     document.getElementById("display-value").innerHTML = "0"
 }
 
@@ -60,4 +62,5 @@ document.addEventListener('keydown', function(event) {
       getResult();
     }
 });
-  
+
+

@@ -57,10 +57,20 @@ body {
 
 button{
     color: #000 !important;
+    -webkit-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.42);
+    box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.42);
+}
+
+button:active{
+    transform: translate(1.5px,1.5px);
 }
 
 .zero{
     grid-column: 1/3;
+}
+.AC{
+    grid-column:1/3;
 }
 
 .dark-grey{
